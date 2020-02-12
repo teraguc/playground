@@ -1,0 +1,69 @@
+@import "./_var-layout.css";
+@import "../color.css";
+
+:root {
+    --TextlintDemo-height: 100%;
+}
+
+.TextlintDemo {
+    background-color: var(--MainBackgroundColor);
+    height: 100%;
+}
+
+.TextlintDemo-title,
+.TextlintDemo-lead {
+    padding-left: var(--left-start-padding);
+    padding-right: var(--right-end-padding);
+}
+
+.TextlintDemo-ruleBox,
+.TextlintDemo-errorBox {
+    padding-bottom: 1rem;
+}
+
+.TextlintDemo-Content {
+    height: 100%;
+    line-height: 1.5;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.TextlintDemo-Editor {
+    border-right: 1px solid #ddd;
+}
+
+.TextlintDemo-Setting {
+    border-left: 1px solid #ddd;
+}
+
+.TextlintDemo-Editor,
+.TextlintEditor .TextlintDemo-Setting,
+.TextlintErrorList {
+    width: 100%;
+}
+
+.TextlintDemo-errorBox,
+.TextlintDemo-ruleBox {
+    overflow-y: scroll;
+}
+
+/*TextlintDemo-Editor | TextlintDemo-Setting*/
+.TextlintEditor,
+.TextlintDemo-Setting {
+    height: var(--TextlintDemo-height);
+}
+
+.TextlintDemo-Editor h3,
+.TextlintDemo-Setting h3 {
+    margin: 0;
+    padding: 0 var(--right-end-padding) 0 0;
+    text-align: right;
+    background: #2f2f2f;
+    color: #fff;
+}
+
+.CodeMirrorEditor,
+.CodeMirrorEditor .CodeMirror {
+    height: var(--TextlintDemo-height);
+    font-size: 14px;
+}

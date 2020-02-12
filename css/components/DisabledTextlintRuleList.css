@@ -1,0 +1,8 @@
+.DisabledTextlintRuleListBox,
+.DisabledTextlintRuleList {
+    margin: 0;
+}
+
+.DisabledTextlintRuleList {
+    padding-left: 32px;
+}
